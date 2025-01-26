@@ -5,17 +5,15 @@ import Bookmarks from './pages/Bookmarks';
 
 function App() {
   return (
-    <Router>
-      <div className="w-full min-h-screen bg-gray-100">
+    <Router basename="/news">
+      <div className="min-h-screen bg-gray-50">
         <Navbar />
-        <div className="w-full  mx-auto px-4 sm:px-6 lg:px-8">
-          <main className="w-full py-8">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/bookmarks" element={<Bookmarks />} />
-            </Routes>
-          </main>
-        </div>
+        <main className="py-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/bookmarks" element={<Bookmarks />} />
+          </Routes>
+        </main>
       </div>
     </Router>
   );
