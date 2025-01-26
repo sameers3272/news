@@ -1,4 +1,4 @@
-const NEWS_API_KEY = '088ea250a49e4723aeed3e79e9ba8c55';
+const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 const BOOKMARKS_KEY = 'news_bookmarks';
 const COUNTRY_KEY = 'news_country';
 
